@@ -1,3 +1,96 @@
 page-home {
 
+
+    .flags
+    {
+        margin-bottom: 15px
+    }
+
+    .flagPic
+    {
+        width: auto;
+        max-height: 20px;
+    }
+
+    .matbeaPic
+    {
+        width: auto;
+        max-height: 80px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .tzedakaPic
+    {
+        width: auto;
+        max-height: 200px
+    }
+
+    .matbeot
+    {
+        overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-top: 1px solid white;
+  color:white;
+    }
+
+
+    .buttonNav
+    {
+        font-size: 30px;
+        width: 100px;
+    }
+
+    .koupatTzedaka
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .amount
+    { 
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: #8a3913;
+    }
+
+    .refresh
+    {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .donate
+    {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .button-md
+    {
+        background-color: #2c2aa1;
+    }
+
+
+    .alert-md .alert-message, .alert-md .alert-input-group {
+        color: rgb(0, 0, 0);
+        padding: 0 24px 24px;
+       
+    }
+
+    .alert-md .alert-message {
+        color: rgb(0, 0, 0);
+        padding: 0 24px 24px;
+       
+    }
+   
+
+    .alert-md .alert-message {
+        max-height: 240px;
+        font-size: 24px;
+    }
 }
+

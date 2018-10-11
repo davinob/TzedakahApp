@@ -1,14 +1,39 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding >
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+      <div [hidden]="showMenu" class='buttonNav'  (click)='showMenu=true'>&#9776;</div>
+  
+<div (click)="showMenu=false">
+    <div  [hidden]="!showMenu" class='flags'>
+        <span class='flag' *ngFor='let country of countries' (click)="chooseCountry(country)">
+            <img class="flagPic" src="assets/imgs/flags/{{country.name}}.png" />
+          </span>
+      </div>
+
+ 
+  <div class='matbeot'>
+    <span class='matbea' *ngFor='let matbea of chosenCountry.matbeot' (click)="addAmount(matbea)">
+      <img class="matbeaPic" src="assets/imgs/matbeot/{{chosenCountry.name}}/{{matbea}}.png" />
+    </span>
+
+  </div>
+
+  <div class="koupatTzedaka">
+    <img class="tzedakaPic" src="assets/imgs/tzedaka.png" />
+  </div>
+  
+  <div class="amount">
+      TOTAL AMOUNT : {{amountSaved}}  {{chosenCountry.moneySign}}
+  </div>
+
+  <div class="donate">
+    <button ion-button icon-end large  (click)="openWithInAppBrowser('http://www.jgive.com')"> Donate</button>
+  </div>
+
+  <div class="refresh">
+    <button ion-button icon-end large  (click)="refreshAmount()">Reset the amount</button>
+  </div>
+</div>
+
+
 </ion-content>
